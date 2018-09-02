@@ -1,0 +1,65 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+  	<title>Quiz {Reprograma}</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="quiz.css"></link>
+    <script src= "quiz.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1> DESAFIOS {REPROGRAMA} </h1>
+      <ul>
+        <li> <a class="menu" id="itemquiz" href = quiz.html>QUIZ</a></li>
+        <li> <a class="menu" id="itemtarefas" href = tarefas.html>LISTA DE TAREFAS</a></li>
+    </header>
+
+    <section id="conteudo">
+      <form id=quiz name="quiz">
+
+        <div id="pergunta1">
+          <p>1. O que significa a sigla HTML?</p>
+          <input type="radio" id="question1" name="question1" value="Hyperlinks and Text Markup Language">Hyperlinks and Text Markup Language <br>
+          <input type="radio" id="question1" name="question1" value="Hyper Text Markup Language">Hyper Text Markup Language <br>
+          <input type="radio" id="question1" name="question1" value="Home Tool Markup Language">Home Tool Markup Language <br>
+        </div>
+
+        <div id="pergunta2">
+          <p>2. O que significa a sigla CSS?</p>
+          <input type="radio" id="question2" name="question2" value="Creative Style Sheets">Creative Style Sheets <br>
+          <input type="radio" id="question2" name="question2" value="Cascading Style Sheets">Cascading Style Sheets <br>
+          <input type="radio" id="question2" name="question2" value="Colorful Style Sheets">Colorful Style Sheets <br>
+        </div>
+
+        <div id="pergunta3">
+          <p>3. Dentro de qual elemento HTML nós colocamos o JavaScript?</p>
+          <input type="radio" id="question3" name="question3" value="script">script <br>
+          <input type="radio" id="question3" name="question3" value="js">js <br>
+          <input type="radio" id="question3" name="question3" value="javascript">javascript <br>
+        </div>
+
+        <input id="terminado" type="button" value= "Pronto!" onclick="respondido()">
+
+
+        <div id="congrats">
+          <p id="mensagens"></p>
+          <p id= "resultado"></p>
+        </div>
+
+      </form>
+  </section>
+
+    <footer>
+      <h4> Feito com s2 pela FernandaVaz para o {reprograma} </h4>
+    </footer>
+
+
+
+
+
+  </body>
+
+</html>
