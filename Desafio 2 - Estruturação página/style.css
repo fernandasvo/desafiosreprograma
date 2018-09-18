@@ -1,0 +1,16 @@
+header {
+	background-color: blue;
+}
+
+aside {
+	width: 50%;
+	border-color: black;
+}
+
+section {
+	width: 50%
+}
+
+footer {
+	background-color: grey;
+}
