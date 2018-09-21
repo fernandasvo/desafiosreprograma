@@ -85,6 +85,7 @@
 
 var btnUser = document.querySelector("#btnuser");
 btnUser.addEventListener('click', function (){
+    event.preventDefault()
     var entradaUser= document.querySelector("#campouser").value;
     
     if (entradaUser.length==0){
@@ -100,6 +101,7 @@ btnUser.addEventListener('click', function (){
 
 var btnSenha= document.querySelector(".btnsenha")
 btnSenha.addEventListener('click', function (){
+    event.preventDefault()
     var entradaSenha=document.querySelector("#camposenha").value;
     if (entradaSenha.length<6){
         alert("Sua senha deve conter pelo menos 6 caracteres")
@@ -111,9 +113,14 @@ btnSenha.addEventListener('click', function (){
 
 //Checagem de valor------------------------------------------//
 
-var entradaValor= document.querySelector("#campovalor").value
+var btnValor= document.querySelector(".btnvalor")
+btnValor.addEventListener('click', function(){
+    event.preventDefault()
+    var entradaValor= document.querySelector("#campovalor").value
+    alert("Você selecionou o valor: "+ entradaValor)    
+})
 
-    
+  
     
     </script>
 
